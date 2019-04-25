@@ -1,0 +1,131 @@
+<div ng-controller="axpage" ax-class="ui.input">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">输入框</div>
+        <div class="panel-body">
+        	
+            <form name="UIInputPage" novalidate>
+        	
+            <table class="table table-striped table-bordered table-hover">
+                <tbody>
+                	<tr>
+                		<td align="right" style="width:300px;display:table-cell;vertical-align:middle">默认输入框，宽度220，可全显示16个汉字：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<input class="form-control ax-input"></input>
+                		</td>
+                	</tr>
+                	<tr>
+                		<td align="right" style="display:table-cell;vertical-align:middle">后面带提示的输入框：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<input class="form-control ax-input"></input> ※
+                		</td>
+                	</tr>
+                	<tr>
+                		<td align="right" style="display:table-cell;vertical-align:middle">弹窗选择输入框：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<input class="form-control ax-input-select" readonly>
+							<i class="fa fa-search" style="margin-left:-20px;cursor:pointer"></i></input>
+						</td>
+                	</tr>
+                	<tr>
+                		<td align="right" style="display:table-cell;vertical-align:middle">后面带提示的弹窗选择输入框：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<input class="form-control ax-input-select" readonly>
+							<i class="fa fa-search" style="margin-left:-20px;padding-right:8px;cursor:pointer"></i></input>※
+						</td>
+                	</tr>
+                	<tr>
+                		<td align="right" style="display:table-cell;vertical-align:middle">搜索输入框：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<input class="form-control ax-input" placeholder="请输入内容">
+							<i class="fa fa-search" style="pointer-events:none;margin-left:-20px"></i></input>
+						</td>
+                	</tr>
+                    <tr>
+                        <td align="right" style="display:table-cell;vertical-align:middle">校验示例(非空)：</td>
+                        <td style="display:table-cell;vertical-align:middle">
+                            <directive key="input_valid_nonull"></directive>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="display:table-cell;vertical-align:middle">校验示例(长度范围)：</td>
+                        <td style="display:table-cell;vertical-align:middle">
+                            <directive key="input_valid_length"></directive>
+                        </td>
+                    </tr>
+                	<tr>
+                		<td align="right" style="display:table-cell;vertical-align:middle">校验示例(手机)：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<directive key="input_valid_phone"></directive>
+						</td>
+                	</tr>
+                	<tr>
+                		<td align="right" style="display:table-cell;vertical-align:middle">校验示例(邮箱)：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<directive key="input_valid_email"></directive>
+						</td>
+                	</tr>
+                	<tr>
+                		<td align="right" style="display:table-cell;vertical-align:middle">校验示例(身份证号)：</td>
+                		<td style="display:table-cell;vertical-align:middle">
+                			<directive key="input_valid_idcard"></directive>
+						</td>
+                	</tr>
+                </tbody>
+            </table>
+
+            </form>
+			
+            <pre readonly>{{code}}
+input:             {template:"input", model:"model"}
+input_hint:        {template:"input_hint", model:"model", hint:"※"}
+input_select:      {template:"input_select", value:"value", click:""}
+input_select_hint: {template:"input_select_hint", value:"value", click:"", hint:"※"}
+input_search:      {template:"input_search", model:"model", label:"搜索：", placeholder:"请输入内容"}
+input_valid_nonull:
+{
+    template:"input_valid", model:"modifyRecord.userCode", form:"UIInputPage", name:"userCode", property:"required",
+    errorMessages:
+    {
+        minlength:"用户账号不能为空"
+    }
+},
+input_valid_length:
+{
+    template:"input_valid", model:"modifyRecord.password", form:"UIInputPage", name:"userCode", property:"ng-minlength=6 ng-maxlength=20",
+    errorMessages:
+    {
+        minlength:"密码不能少于6位字符",
+        maxlength:"密码不能超过20位字符"
+    }
+},
+input_valid_phone: 
+{
+    template:"input_valid", model:"modifyRecord.mobile", type:"", form:"UIInputPage", name:"mobile", property:"pattern='1\\d{10}'",
+    errorMessages:
+    {
+        pattern:"手机号码错误"
+    }
+},
+input_valid_email:
+{
+    template:"input_valid", model:"modifyRecord.email", type:"email", form:"UIInputPage", name:"email", property:"",
+    errorMessages:
+    { 
+        email:"邮箱格式错误"
+    }
+},
+input_valid_idcard:
+{
+    template:"input_valid", model:"modifyRecord.idCard", form:"UIInputPage", name:"idCard", property:"directive-valid",
+    errorMessages:
+    {
+        idCard:"身份证号错误"
+    }
+}
+            </pre>
+        </div>
+    </div>
+
+</div>
+

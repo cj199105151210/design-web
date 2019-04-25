@@ -1,0 +1,56 @@
+
+<div class="panel-heading" ng-init="AXModalInfo.style={width:'1000px'}">
+    选择用户<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+
+<div ng-controller="axpage" ax-class="userSelect">
+    <div class="panel-body" style="min-height:600px;max-height:600px;padding-bottom:0px;">
+        <div class="row">
+            <div class="col-lg-5">
+
+                <!--组织机构面板-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-sitemap fa-fw"></i> 组织机构：
+                    </div>
+                    <div class="panel-body" style="height:534px;overflow:auto;padding:0px;margin:-1px">
+                        <div id="treeview-org" class="treeview"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3" style="padding:0px">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-user"></i><i class="fa fa-user fa-fw"></i> 待选择用户：
+                    </div>
+                    <div class="panel-body" style="height:534px;overflow:auto;padding:0px;margin:-1px">
+                        <div id="treeview-user" class="treeview"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1" style="height:534px" align="center">  
+                <button type="button" ng-click="addUser()" class="btn btn-default btn-outline btn-sm" style="top:30%;position:relative;width:55px"><i class="fa fa-chevron-right"></i></button>
+                <button type="button" ng-click="addUserAll()" class="btn btn-default btn-outline btn-sm" style="top:33%;position:relative;width:55px"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></button>
+                <button type="button" ng-click="decUser()" class="btn btn-default btn-outline btn-sm" style="top:47%;position:relative;width:55px"><i class="fa fa-chevron-left"></i></button>
+                <button type="button" ng-click="decUserAll()" class="btn btn-default btn-outline btn-sm" style="top:50%;position:relative;width:55px"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i></button>
+            </div>
+            <div class="col-lg-3" style="padding-left:0px">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-user fa-fw"></i> 已选择用户：
+                    </div>
+                    <div class="panel-body" style="height:534px;overflow:auto;padding:0px;margin:-1px">
+                        <div id="treeview-selected" class="treeview"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-footer" style="height:50px" align="center">
+        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" style="margin-right:20px;padding:3px;font-size:13px;width:120px" ng-click="submit()"><b>确定</b>
+        </button>
+        <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" style="padding:3px;font-size:13px;width:120px">取消</button>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="panel-body" style="min-height:160px;padding-bottom:0px;" ng-init="AXModalInfo.style={width:'400px',top:'20%'}">
+	<div style="height:20px;"></div>
+	<div align="center">
+		<p>
+			<h5 ng-bind-html="AXModalInfo.content">{{AXModalInfo.content}}</h5><br><br>
+			<button type="button" class="btn btn-info btn-outline btn-sm" data-dismiss="modal" style="padding:6px;font-size:13px;width:150px" align="center" ng-click="AXModalInfo.callback()">关闭</button>
+		</p>
+	</div>
+</div>

@@ -1,0 +1,88 @@
+<div ng-controller="axpage" ax-class="ui.select">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">选项</div>
+        <div class="panel-body">
+        	
+            <table class="table table-striped table-bordered table-hover">
+                <tbody>
+                    <tr>
+                		<td align="right" style="width:300px;display:table-cell;vertical-align:middle">字串选择1：</td>
+                		<td style="width:300px;display:table-cell;vertical-align:middle">
+                			<div class="form-group" style="height:22px;margin:0px;padding-top:2px">
+                                <label class="radio-inline" style="padding-right:20px"><input type="radio" style="margin-top:2px" name="sex1" ng-value="'男'" ng-model="value_str1">男</label>
+                                <label class="radio-inline" style="padding-right:20px"><input type="radio" style="margin-top:2px" name="sex1" ng-value="'女'" ng-model="value_str1">女</label>
+                            </div>
+                		</td>
+                        <td style="display:table-cell;vertical-align:middle">{{value_str1}}</td>
+                	</tr>
+                	<tr>
+                        <td align="right" style="width:300px;display:table-cell;vertical-align:middle">字串选择2：</td>
+                		<td style="width:300px;display:table-cell;vertical-align:middle">
+                            <div class="form-group" style="height:22px;margin:0px;padding-top:2px">
+                                <label class="radio-inline" style="padding-right:20px"><input type="radio" style="margin-top:2px" name="sex2" ng-value="1" ng-model="value_str2">男</label>
+                                <label class="radio-inline" style="padding-right:20px"><input type="radio" style="margin-top:2px" name="sex2" ng-value="0" ng-model="value_str2">女</label>
+                            </div>
+                        </td>
+                        <td style="display:table-cell;vertical-align:middle">{{value_str2}}</td>
+                	</tr>
+                    <tr>
+                        <td align="right" style="width:300px;display:table-cell;vertical-align:middle">默认选项(无初始选中)：</td>
+                        <td style="width:300px;display:table-cell;vertical-align:middle">
+                            <select class="form-control ax-input" ng-model="selected_static" ng-options="x.name for x in staticList"></select>
+                        </td>
+                        <td style="display:table-cell;vertical-align:middle">{{selected_static}}</td>
+                    </tr>
+                	<tr>
+                		<td align="right" style="width:300px;display:table-cell;vertical-align:middle">字典选择(对象型，可初始选中)：</td>
+                        <td style="width:300px;display:table-cell;vertical-align:middle">
+                            <select class="form-control ax-input" ng-model="selected_obj_id">
+                                <option ng-repeat="x in objList" value="{{x.id}}" ng-selected="x.id==selected_obj_id">{{x.name}}</option>
+                            </select>
+                        </td>
+                        <td style="display:table-cell;vertical-align:middle">{{selected_obj_id}}</td>
+                	</tr>
+                	<tr>
+                		<td align="right" style="width:300px;display:table-cell;vertical-align:middle">字典选择(字符型，可初始选中)：</td>
+                        <td style="width:300px;display:table-cell;vertical-align:middle">
+                            <select class="form-control ax-input" ng-model="selected_str">
+                                <option ng-repeat="x in strList" value="{{x}}" ng-selected="x==selected_str">{{x}}</option>
+                            </select>
+                        </td>
+                        <td style="display:table-cell;vertical-align:middle">{{selected_str}}</td>
+                	</tr>
+                    <tr>
+                        <td align="right" style="width:300px;display:table-cell;vertical-align:middle">字典选择(带空行)：</td>
+                        <td style="width:300px;display:table-cell;vertical-align:middle">
+                            <select class="form-control ax-input" ng-model="selected_obj_id">
+                                <option value=""></option>      
+                                <option ng-repeat="x in objList" value="{{x.id}}" ng-selected="x.id==selected_obj_id">{{x.name}}</option>
+                            </select>
+                        </td>
+                        <td style="display:table-cell;vertical-align:middle">{{selected_obj_id}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <pre readonly>{{code}}
+radio_value1: {template:"select_radio", model:"sex", value0:"'男'", value1:"'女'", label0:"男", label1:"女"}
+radio_value2: {template:"select_radio", model:"sex", value0:"1", value1:"0", label0:"男", label1:"女"}
+
+//this.scope.staticList = [{id:"1", name:"选项1"}, {id:"2", name:"选项2"}, {id:"3", name:"选项3"}];
+select:       {template:"select"      , model:"selected_static", source:"staticList", property:""}
+select_blank: {template:"select_blank", model:"selected_static", source:"staticList", property:""}
+
+//this.scope.objList = [{id:"1", name:"字典1"}, {id:"2", name:"字典2"}, {id:"3", name:"字典3"}];
+select_dic:       {template:"select_dic"      , model:"selected_obj_id", source:"objList", value:"id", name:"name", property:""}
+select_dic_blank: {template:"select_dic_blank", model:"selected_obj_id", source:"objList", value:"id", name:"name", property:""}
+
+//this.scope.strList = ["字串1", "字串2", "字串3"];
+select_str:       {template:"select_str"      , model:"selected_str", source:"strList", property:""}
+select_str_blank: {template:"select_str_blank", model:"selected_str", source:"strList", property:""}
+
+            </pre>
+        </div>
+    </div>
+
+</div>
+

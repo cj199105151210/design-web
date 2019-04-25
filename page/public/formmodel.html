@@ -1,0 +1,44 @@
+<div ng-controller="axpage" ax-class="formmodel">
+    <div class="panel panel-default"  >
+        <div class="panel-heading"  style="height:53px">
+            <i class="fa fa-sitemap fa-fw"></i> 表单分类-新增：
+            <div style="width:auto;position: absolute;right: 0">
+                <div id="btns" style="margin-top: -25px">
+                    <a id="saveBtn" class="l-btn l-btn-plain" ng-click="sumbit();">
+                        <span class="l-btn-left l-btn-icon-top"><span class="l-btn-text">保存</span>
+                            <i class="l-btn-icon icon-save">&nbsp;</i>
+                        </span>
+                    </a>
+                    <a id="closeBtn" class="l-btn  l-btn-plain "  data-dismiss="modal" >
+                        <span class="l-btn-left l-btn-icon-top">
+                            <span class="l-btn-text">关闭</span>
+                            <i class="l-btn-icon icon-clear">&nbsp;</i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body" style="height:100px;max-height:400px;overflow:auto">
+          <div style="width:540px;">
+              <!--<input  type="text" ng-show = false ng-model="guid"/>-->
+              <table border="1" style="width:560px;">
+                  <thead style="width:100%;">
+                    <tr>
+                         <th width="20%"><div align="right">属性</div></th>
+                         <th width="80%"><div align="center">值</div></th>
+                     </tr>
+                  </thead>
+                  <tbody margin-top="10px" style="width:100%;">
+                      <tr>
+                          <th width="20%"><div align="right">流程分类名称</div></th>
+                          <th width="80%"><input type="text" style="width: 100%" name="fname" ng-model="name"/></th>
+                      </tr>
+                  </tbody>
+                  <tbody>
+
+                  </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+</div>

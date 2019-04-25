@@ -1,0 +1,53 @@
+
+<div ng-controller="axpage" ax-class="home" ax-page="home">
+    
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <img src="" class="pull-left" style="padding-top:6px;padding-left:20px"><a class="navbar-brand" href="index.html">{{system.title}}</a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right" style="margin-right:0;">
+            <li><a href="javascript:void(0)"><i class="fa fa-home fa-fw"></i> 首页</a></li>
+            <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="fa fa-user fa-fw"></i> 个人中心&nbsp;<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a  ng-click="ax().modal({template:'page/public/region.select.html', callback:null})"><i class="fa fa-key fa-fw"></i> 修改密码</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0)" ng-click="loginOut()"><i class="fa fa-sign-out fa-fw"></i> 退出登录</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="navbar-default sidebar" role="navigation" >
+            <ul class="nav" id="side-menu" >
+                <li ng-repeat="x in system.menu">
+                    <a  href="javascript:void(0)" style="line-height:15px"><i class="fa {{x.icon}} fa-fw"></i>&nbsp;{{x.name}}<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li ng-repeat="y in x.items">
+                            <a href="javascript:void(0)" style="line-height:10px" ng-click="menuClick(y)" ng-class="{active:y==currTab}"><i ng-class="'fa fa-file-o fa-fw'"></i>&nbsp;{{y.name}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="page-wrapper" style="padding-left:15px;padding-right:15px;padding-bottom:0px;height: 100%">
+        <ul id="page-tabs" class="nav nav-tabs" style="padding-top:5px" ng-show="currTab">
+            <li role="presentation" ng-class="{active:x==currTab}" ng-repeat="x in tabs">
+                <a href="javascript:void(0)" ng-click="tabClick(x)" ng-mouseenter="_hover=x" ng-mouseleave="_hover=0" style="padding-top:6px;height:30px">
+                    <i class="fa fa-times" ng-click="tabClose(x)" ng-style="{opacity:_hover==x?1:0,background:_hoverbg}" style="margin-left:-5px;border-radius:3px;padding:3px" 
+                    ng-mouseenter="_hoverbg='#d0d0d0'" ng-mouseleave="_hoverbg=''"></i>
+                    <b style="margin-right:14px">{{x.name}}</b>
+                </a>
+            </li>
+        </ul>
+        <div class="panel-body" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+            <div class="tab-content">
+                <div class="tab-pane" ng-class="{active:x==currTab}" ng-repeat="x in tabs" ax-class="{{x.axclass}}">
+                    <div ng-include="x.url"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

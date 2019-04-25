@@ -1,0 +1,30 @@
+<div ng-controller="axpage" ax-class="importimage">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <div style="max-height:400px;overflow:auto">
+            <form style="padding:20px; font-size:15px;">
+                <table class="table table-bordered table-striped table-hover">
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">控件名称<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字段英文名<p style="color: red; display: inline"><b> *</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  ng-model="con.image_name" required="required" placeholder="&ensp;必填项"/></td>
+                        <td><input type="text"  ng-model="con.image_dbname" required="required" ng-blur="dbNameCheck();"  placeholder="&ensp;必填项"/></td>
+                    </tr>
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">图片的宽<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">图片的高<p style="color: red; display: inline"><b> *</b></p></td>
+                    </tr>
+                    <tr ng-init="con.image_length = 100; con.image_height = 100">
+                        <td><input type="text"  ng-model="con.image_length" required ng-value="con.image_length" ng-blur="length(con)" />&nbsp px</td>
+                        <td><input type="text"  ng-model="con.image_height" required ng-value="con.image_height" ng-blur="length(con)"/>&nbsp px</td>
+                    </tr>
+                </table>
+                <div style="float:right; padding: 10px;">
+                    <a  class="btn btn-default btn-outline btn-sm" ng-click="imagesave();" >保存</a>
+                    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" >取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

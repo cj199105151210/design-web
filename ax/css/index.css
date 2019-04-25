@@ -1,0 +1,143 @@
+i
+{
+	    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    background: url(./icons.png) no-repeat -1212px -1111px;
+   
+}
+
+.skin-blue .sidebar-menu > li:hover > a>i, .skin-blue .sidebar-menu > li.active > a>i {
+    color: #589fef;
+}
+
+.skin-blue .sidebar-menu > li:hover > a>span, .skin-blue .sidebar-menu > li.active > a>span {
+    color: #121212;
+}
+
+a:hover, a:active, a:focus {
+    outline: none!important;
+    text-decoration: none;
+    color: #72afd2;
+}
+
+sf-menu li ul {
+    background: #fff;
+}
+
+.sf-menu a, .sf-menu li ul li.sfHover a {
+    position: relative;
+    text-decoration: none;
+    zoom: 1;
+    color: #313538 !important;
+    display: block;
+}
+
+element.style {
+    touch-action: pan-y;
+}
+
+.sf-vertical {
+    width: inherit;
+}
+
+.sf-menu {
+    margin-bottom: 1em;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: inherit;
+}
+
+.sf-vertical ul {
+    left: 99%;
+    top: 0;
+}
+
+
+.sidebar-menu>li {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    cursor: pointer;
+}
+
+ul, menu, dir {
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.sidebar-menu>li>a>i, .sidebar-menu>li>a>span {
+    display: block;
+    margin-top: 5px;
+}
+
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-icon-none:before {
+    content: "\e605";
+}
+.sidebar-menu>li>a>span {
+    color: #fffdfa;
+}
+
+.menuconfont, [class^='menu-icon-'] {
+       font-family: "menuconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sidebar-menu>li>a>i {
+    color: #dceef9;
+}
+.sidebar-menu>li>a {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    height: inherit;
+    text-align: center;
+    padding: 10px 0px;
+    margin-right: 0px;
+}
+
+.sidebar-menu>li>a>i {
+    font-size: 28px;
+    line-height: 28px;
+    width: auto;
+    height: 28px;
+}
+
+html, body {
+    font: 100% Î¢ÈíÑÅºÚ;
+    margin: 0;
+    padding: 0;
+    color: #434343;
+    font-family: Arial,Î¢ÈíÑÅºÚ;
+    line-height: 20px;
+    font-size: 12px;
+    word-break: normal;
+    background: #FFF;
+}
+

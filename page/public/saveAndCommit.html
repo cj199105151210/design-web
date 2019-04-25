@@ -1,0 +1,23 @@
+<div ng-controller="axpage" ax-class="saveAndCommit">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <div style="max-height:400px;overflow:auto">
+
+            <form style="padding:20px; font-size:15px;">
+                <table class="table table-bordered table-striped table-hover">
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">按钮高度</td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">按钮宽度</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  ng-model="con.button_height"  placeholder="&ensp;auto"/></td>
+                        <td><input type="text"  ng-model="con.button_width"   placeholder="&ensp;auto"/></td>
+                    </tr>
+                </table>
+                <div style="float:right; padding: 10px;">
+                    <a  class="btn btn-default btn-outline btn-sm" ng-click="buttonSave();" >保存</a>
+                    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" >取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

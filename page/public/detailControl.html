@@ -1,0 +1,68 @@
+<div ng-controller="axpage" ax-class="detailControl">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <div style="max-height:400px;overflow:auto">
+            <form style="padding:20px; font-size:15px;">
+                <table class="table table-bordered table-striped table-hover">
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">控件名称<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字段英文名<p style="color: red; display: inline"><b> *</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  ng-model="con.control_name" required="required" placeholder="&ensp;必填项"/></td>
+                        <td><input type="text"  ng-model="con.control_dbName" required="required" ng-blur="dbNameCheck();"  placeholder="&ensp;必填项"/></td>
+                    </tr>
+                </table>
+                <table class="table table-hover table-condensed" id="options_table">
+                    <tr>
+                        <!--<th align="center" style="display:table-cell;vertical-align:middle" width="80">选中</th>-->
+                        <th align="center" style="display:table-cell;vertical-align:middle" width="320">数据库字段名称</th>
+                        <th align="center" style="display:table-cell;vertical-align:middle" width="260">字段显示名</th>
+                        <th align="center" style="display:table-cell;vertical-align:middle" width="360">字段类型</th>
+                        <th align="center" style="display:table-cell;vertical-align:middle" width="360">类型</th>
+                    </tr>
+                    <tr ng-repeat="row in  source">
+                        <!--<td align="center" style="display:table-cell;vertical-align:middle">-->
+                            <!--<input ng-model="row.detail_check"  type="radio" name="checked1"  ng-value=$index style="width:100%"/>-->
+                        <!--</td>-->
+                        <td align="center" style="display:table-cell;vertical-align:middle">
+                            <input ng-model="row.detail_db_name" type="text"   style="width:90%" placeholder="数据库字段名称"/>
+                        </td>
+                        <td align="center" style="display:table-cell;vertical-align:middle">
+                            <input ng-model="row.detail_name" type="text"   style="width:90%" placeholder="字段显示名"/>
+                        </td>
+                        <td align="center" style="display:table-cell;vertical-align:middle">
+                            <select  ng-model="row.detail_type" style="width:90%;" ng-change = "typeChange(row, true)">
+                                <option value="" selected>请选择</option>
+                                <option value="INT">大整数值</option>
+                                <option value="CHAR">定长字符串</option>
+                                <option value="VARCHAR">变长字符串</option>
+                                <option value="TEXT">长文本数据</option>
+                                <option value="DATE">日期值</option>
+                                <option value="DATETIME">日期和时间值</option>
+                                <option value="TIMESTAMP">时间戳</option>
+                            </select>
+                        </td>
+                        <td align="center" style="display:table-cell;vertical-align:middle">
+                            <select  ng-model="row.detail_db_type" style="width:90%;" ng-change = "typeChange(row, false)">
+                                <option value="" selected>请选择</option>
+                                <option value="INT">INT</option>
+                                <option value="CHAR">CHAR</option>
+                                <option value="VARCHAR">VARCHAR</option>
+                                <option value="TEXT">TEXT</option>
+                                <option value="DATE">DATE</option>
+                                <option value="DATETIME">DATETIME</option>
+                                <option value="TIMESTAMP">TIMESTAMP</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <a title="添加选项" class="btn btn-primary" ng-click="insertDetails();">添加选项</a>
+                <a title="删除选项" class="btn btn-primary" ng-click="deleteDetails();">删除选项</a>
+                <div style="float:right; padding: 10px;">
+                    <a  class="btn btn-default btn-outline btn-sm" ng-click="detailSave();" >保存</a>
+                    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" >取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3258ff8-f2da-4b6a-95da-a7ddc5070e0e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/public/detailControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/public/detailControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/bosi/formDesign/formDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/bosi/formDesign/formDesign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/public/detailControl.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/public/detailControl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/public/preview2.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/public/preview2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formdesign/logs/config-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/../formdesign/logs/config-server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formdesign/src/main/java/com/bosssoft/formdesign/comm/ParseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../formdesign/src/main/java/com/bosssoft/formdesign/comm/ParseUtils.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/public/detailControl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="109" />
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#1;n#table#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/public/detailControl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/bosi/formDesign/formDesign.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24020">
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/public/preview2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11275">
+              <caret line="451" column="15" selection-start-line="448" selection-start-column="11" selection-end-line="451" selection-end-column="15" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ret</find>
+      <find>date</find>
+      <find>textarea</find>
+      <find>model</find>
+      <find>ue</find>
+      <find>inser</find>
+      <find>modifyRecord</find>
+      <find>editorFunction</find>
+      <find>execCommand</find>
+      <find>getContent</find>
+      <find>preview2</find>
+      <find>insertAccount</find>
+      <find>control_dbName</find>
+      <find>radiocheck</find>
+      <find>insertDetails</find>
+      <find>deleteDetails</find>
+      <find>detail_check</find>
+      <find>textareasave</find>
+      <find>detail_db_name</find>
+      <find>detailSave</find>
+      <find>control_flag</find>
+      <find>condition</find>
+      <find>save</find>
+      <find>dbNameCheck</find>
+      <find>preview</find>
+      <find>button</find>
+      <find>uploaderClick</find>
+      <find>getDateType</find>
+      <find>editor</find>
+      <find>editorF</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\form-design_new\formdesign-web</dir>
+      <dir>D:\form-design_new\formdesign-web\vendor\ueditor</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/vendor/sb-admin-2/css/easyui.css" />
+        <option value="$PROJECT_DIR$/page/public/formmodel.html" />
+        <option value="$PROJECT_DIR$/js/base/manager.js" />
+        <option value="$PROJECT_DIR$/vendor/ztree/css/zTreeStyle/zTreeStyle.css" />
+        <option value="$PROJECT_DIR$/page/public/formadd.html" />
+        <option value="$PROJECT_DIR$/js/home.js" />
+        <option value="$PROJECT_DIR$/js/base/query.js" />
+        <option value="$PROJECT_DIR$/vendor/ztree/css/awesomeStyle/fa.less" />
+        <option value="$PROJECT_DIR$/vendor/layui/css/layui.css" />
+        <option value="$PROJECT_DIR$/ax-ui/ui.translate.js" />
+        <option value="$PROJECT_DIR$/page/public/Singletext.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/vendor/ueditor/lang/zh-cn/zh-cn.js" />
+        <option value="$PROJECT_DIR$/vendor/ueditor/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/vendor/ueditor/ueditor.all.js" />
+        <option value="$PROJECT_DIR$/js/public/formmodel.js" />
+        <option value="$PROJECT_DIR$/page/public/singletext.html" />
+        <option value="$PROJECT_DIR$/page/public/textarea.html" />
+        <option value="$PROJECT_DIR$/js/public/singletext.js" />
+        <option value="$PROJECT_DIR$/js/public/textarea.js" />
+        <option value="$PROJECT_DIR$/page/public/radios.html" />
+        <option value="$PROJECT_DIR$/page/public/select.html" />
+        <option value="$PROJECT_DIR$/js/public/radios.js" />
+        <option value="$PROJECT_DIR$/js/public/select.js" />
+        <option value="$PROJECT_DIR$/js/public/checkboxs.js" />
+        <option value="$PROJECT_DIR$/js/public/formdate.js" />
+        <option value="$PROJECT_DIR$/js/public/importimage.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/page/public/formdate.html" />
+        <option value="$PROJECT_DIR$/js/public/formadd.js" />
+        <option value="$PROJECT_DIR$/js/public/preview2.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/js/bosi/formDesign/formDesign.js" />
+        <option value="$PROJECT_DIR$/page/public/detailControl.html" />
+        <option value="$PROJECT_DIR$/page/bosi/formDesign/formDesign.html" />
+        <option value="$PROJECT_DIR$/page/public/preview2.html" />
+        <option value="$PROJECT_DIR$/js/public/detailControl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="E:\apache-maven-3.0.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="775" />
+    <option name="y" value="5" />
+    <option name="width" value="1120" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="formdesign-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="formdesign-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="formdesign-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="formdesign-web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="formdesign-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="formdesign-web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bosi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="formdesign-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="formdesign-web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bosi" type="462c0819:PsiDirectoryNode" />
+              <item name="formDesign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="formdesign-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="formdesign-web" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="formdesign-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="formdesign-web" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="ax.&#9;FILE&#9;file://D:/form-design_new/formdesign-web/ax/ax.service.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550138667614" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\form-design_new\formdesign-web\page\public" />
+      <recent name="D:\code\form-design_new\formdesign-web\js\public" />
+      <recent name="D:\form-design_new\formdesign-web\vendor" />
+      <recent name="D:\form-design_new\formdesign-web\ax-ui" />
+      <recent name="D:\form-design_new\formdesign-web\page" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\form-design_new\formdesign-web\js" />
+      <recent name="D:\form-design_new\formdesign-web\vendor\ueditor" />
+      <recent name="D:\form-design_new\formdesign-web\vendor\jquery" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3258ff8-f2da-4b6a-95da-a7ddc5070e0e" name="Default" comment="" />
+      <created>1545707516399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545707516399</updated>
+      <workItem from="1545707518154" duration="41175000" />
+      <workItem from="1545820011212" duration="27678000" />
+      <workItem from="1545901160965" duration="95947000" />
+      <workItem from="1546477738346" duration="956000" />
+      <workItem from="1546479097282" duration="125891000" />
+      <workItem from="1547803908669" duration="1165000" />
+      <workItem from="1548572456405" duration="1800000" />
+      <workItem from="1548657134357" duration="212000" />
+      <workItem from="1549939370930" duration="802000" />
+      <workItem from="1549961180672" duration="815000" />
+      <workItem from="1549962047657" duration="1288000" />
+      <workItem from="1549963917963" duration="790000" />
+      <workItem from="1550018593362" duration="5916000" />
+      <workItem from="1550028944699" duration="3591000" />
+      <workItem from="1550039261591" duration="13245000" />
+      <workItem from="1550105172060" duration="20272000" />
+      <workItem from="1550191569757" duration="14912000" />
+      <workItem from="1550215764625" duration="10357000" />
+      <workItem from="1550391480304" duration="596000" />
+      <workItem from="1550450467023" duration="11636000" />
+      <workItem from="1550545430851" duration="165000" />
+      <workItem from="1550642129379" duration="420000" />
+      <workItem from="1550642587360" duration="44000" />
+      <workItem from="1552985019927" duration="521000" />
+    </task>
+    <task id="LOCAL-00001" summary="tijiiao">
+      <created>1547804174211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547804174211</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="414749000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1816354" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" weight="0.26345608" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49932975" weight="0.22521247" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.106461085" />
+      <window_info anchor="right" id="Properties" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tijiiao" />
+    <option name="LAST_COMMIT_MESSAGE" value="tijiiao" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ax/ax.define.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="113" column="20" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ueditor/themes/default/css/ueditor.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ueditor/dialogs/map/map.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ueditor/lang/zh-cn/zh-cn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <marker date="1546589576873" expanded="true" signature="3769:3779" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ax/ax.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/phrase.rnc" />
+    <entry file="file://$PROJECT_DIR$/vendor/ueditor/ueditor.all.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms.rnc" />
+    <entry file="file://$PROJECT_DIR$/vendor/ueditor/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8338">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js" />
+    <entry file="file://$PROJECT_DIR$/page/public/textarea.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/singletext.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="98" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ax-ui/ui.translate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="234" column="135" selection-start-line="234" selection-start-column="135" selection-end-line="234" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ax-ui/ui.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding>
+            <marker date="1542354182501" expanded="true" signature="482:519" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2037:2075" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="2076:2480" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2122:2140" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2190:2219" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="2321:2339" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="2389:2418" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2539:2577" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="2578:3167" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2624:2642" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2692:2721" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2809:2827" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="2877:2906" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="3008:3026" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="3076:3105" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="3287:3730" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="3605:3653" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="3692:3706" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="4063:4074" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="4359:4370" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="4478:4489" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="4614:4653" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="5396:5428" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="5621:5671" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="5866:5904" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="6021:6341" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="6220:6264" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="6303:6317" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="6764:6808" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="6847:6861" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="6974:7014" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="7071:7111" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="7204:9383" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="7346:9377" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="7372:7392" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="7393:7929" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="7412:7910" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="7456:7474" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="7595:7613" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="7772:7790" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="7864:7882" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="7947:9369" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="7994:9350" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="8138:8151" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="8261:8301" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="8350:8406" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="8552:8592" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="8593:8892" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="8974:9014" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="9015:9330" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="9417:10515" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="9559:10509" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="9582:9602" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="9603:9919" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="9622:9900" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="9666:9684" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="9854:9872" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="9937:10501" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="9984:10482" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="10063:10103" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="10152:10208" ph="..." />
+            <marker date="1542354182501" expanded="false" signature="10364:10404" ph="..." />
+            <marker date="1542354182501" expanded="true" signature="10405:10462" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/formmodel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ax/ax.func.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="152" column="4" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ax/ax.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/right.select.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/singletext.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laydate/need/laydate.css" />
+    <entry file="file://$PROJECT_DIR$/js/public/textarea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ueditor/ueditor.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="7316" column="8" selection-start-line="7316" selection-start-column="8" selection-end-line="7316" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ax-ui/ui.laydate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="64" column="88" selection-start-line="64" selection-start-column="82" selection-end-line="64" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/save.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/saveAndCommit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2250" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/formadd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/preview2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#101#107#1" expanded="true" />
+            <element signature="e#70#76#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/right.select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1772" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/region.select.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/save.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/saveAndCommit.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/radios.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="19" column="84" lean-forward="true" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/importimage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/radios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/select.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/checkboxs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/bosi/formDesign/formDesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="43" column="115" lean-forward="true" selection-start-line="43" selection-start-column="115" selection-end-line="43" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/formadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/formdate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="46" column="70" lean-forward="true" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/formdate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/parentselect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/importimage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/detailControl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="109" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#1;n#table#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/public/preview2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11275">
+          <caret line="451" column="15" selection-start-line="448" selection-start-column="11" selection-end-line="451" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public/detailControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bosi/formDesign/formDesign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24020">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

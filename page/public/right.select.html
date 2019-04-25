@@ -1,0 +1,52 @@
+
+<div class="panel-heading" ng-init="AXModalInfo.style={width:'1000px'}">
+    选择权限<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+
+<div ng-controller="axpage" ax-class="rightSelect">
+    <div class="panel-body" style="min-height:600px;max-height:600px;padding-bottom:0px;">
+        <div class="row">
+            <div class="col-lg-6" style="padding-right:0px">
+
+                <div class="panel panel-default" style1="border:0px">
+                    <div class="panel-heading" style="height:42px">
+                        <div class="form-group">
+                            <i class="fa fa-key"></i><i class="fa fa-key fa-fw"></i> 待选择权限：
+                            <span style="padding-left:60px"></span>
+                            <label>显示方式：</label>
+                            <label class="radio-inline"><input type="radio" name="showType" ng-model="showType" value="menu" ng-click="switchShowType()" ng-init="showType='menu'">按菜单</label>
+                            <label class="radio-inline"><input type="radio" name="showType" ng-model="showType" value="group" ng-click="switchShowType()" >自定义权限组</label>
+                        </div>
+                    </div>
+                    <div class="panel-body" style="height:534px;overflow:auto;padding:0px;margin:-1px">
+                        <div id="treeview-right" class="treeview" ng-show="showType=='menu'"></div>
+                        <div id="treeview-right-group" class="treeview" ng-show="showType=='group'"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-1" style="height:534px" align="center">  
+                <button type="button" class="btn btn-default btn-outline btn-sm" style="top:30%;position:relative;width:55px" ng-click="addRight()"><i class="fa fa-chevron-right"></i></button>
+                <button type="button" class="btn btn-default btn-outline btn-sm" style="top:33%;position:relative;width:55px" ng-click="addRightAll()"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></button>
+                <button type="button" class="btn btn-default btn-outline btn-sm" style="top:47%;position:relative;width:55px" ng-click="decRight()"><i class="fa fa-chevron-left"></i></button>
+                <button type="button" class="btn btn-default btn-outline btn-sm" style="top:50%;position:relative;width:55px" ng-click="decRightAll()"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i></button>
+            </div>
+            <div class="col-lg-5" style="padding-left:0px">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-key fa-fw"></i> 已选择权限：
+                    </div>
+                    <div class="panel-body" style="height:534px;overflow:auto;padding:0px;margin:-1px">
+                        <div id="treeview-right-selected" class="treeview"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-footer" style="height:50px" align="center">
+        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" style="margin-right:20px;padding:3px;font-size:13px;width:120px" ng-click="submit()"><b>确定</b>
+        </button>
+        <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" style="padding:3px;font-size:13px;width:120px">取消</button>
+    </div>
+</div>

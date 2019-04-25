@@ -1,0 +1,62 @@
+<div ng-controller="axpage" ax-class="formdesign">
+
+    <div  ng-show= "show" ng-model="show">
+          <div style="float: left;width: 20%;height: 100%;border: 10px;border-color: #000000; left: 0px; top: 0px;">
+              <div class="panel-header" style="width: 100%;">
+                  <div class="panel-title">流程分类</div>
+              </div>
+              <div style = "width:100%;height:500px;text-align:left;float: left;">
+                  <ul id="mainTree" class="ztree"></ul>
+              </div>
+          </div>
+        <div style="float: right;width: 80%;height: 100%;border: 10px;border-color: #000000; left: 0px; top: 0px;padding-left: 3px;" >
+            <div class="panel-header" style="width: 100%;">
+                <div class="panel-title">表单列表</div>
+            </div>
+            <directive key="tblQuery"></directive>
+            <div style="height:10px" align="center">
+                <directive key="imgLoading"></directive>
+            </div>
+            <div style="height:30px">
+                <button type="button" class="btn btn-outline btn-info btn-sm" ng-click="insertAccount()"><i class="fa fa-plus"></i> 新增表单</button>
+                <button type="button" class="btn btn-outline btn-info btn-sm"  ng-click="delete()"><i class="fa fa-share"></i>删除</button>
+            </div>
+            <directive key="tblResult"></directive>
+
+            <directive-axtemplate></directive-axtemplate>
+        </div>
+    </div>
+    <div ng-show= "formshow" ng-model="formshow">
+        <div style="float: left;width: 20%;height: 100%;border: 10px;border-color: #000000; left: 0px; top: 0px;">
+            <div class="panel-header" style="width: 100%;">
+                <div class="panel-title">表单控件</div>
+            </div>
+            <div id="components" style="clear: both; padding: 15px 12px 15px 19px;">
+                <h3 style="color:#236ABF; width:120px;overflow: auto; padding-bottom: 10px;">
+                    <a href="#" style="float: left; font-size: 20px; color: #BF6F2F;text-decoration:none;">标准控件</a>
+                </h3>
+                <a href="#" class="easyui-linkbutton" ng-click="textalert()">文本框</a>&nbsp &nbsp &nbsp
+                <a href="#" class="easyui-linkbutton" ng-click="multilinetext()">多行文本</a><br><br>
+                <a href="#" class="easyui-linkbutton" ng-click="menualert()">下拉菜单</a>&nbsp &nbsp &nbsp
+                <a href="#" class="easyui-linkbutton" ng-click="radios()">单选框</a><br><br>
+                <a href="#" class="easyui-linkbutton" ng-click="checkboxs()">复选框</a>&nbsp &nbsp &nbsp<br><br>
+                <h3 style="color:#236ABF; width:120px;overflow: auto; padding-bottom: 10px;">
+                    <a href="#" style="float: left; font-size: 20px; color: #BF6F2F;text-decoration:none;">高级控件</a>
+                </h3>
+                <a href="#" class="easyui-linkbutton" ng-click="parentselect()">关联下拉框</a><br><br>
+                <a href="#" class="easyui-linkbutton" ng-click="importimage()">图片上传</a>&nbsp &nbsp &nbsp
+                <a href="#" class="easyui-linkbutton" ng-click="detailControl()">明细控件</a><br><br>
+                <a href="#" class="easyui-linkbutton" ng-click="datetime()">时间控件</a>&nbsp &nbsp &nbsp
+
+            </div>
+        </div>
+        <div style="float: right;width: 80%;height: 100%;border: 10px;border-color: #000000; left: 0px; top: 0px;padding-left: 3px;" id="formDesign">
+            <div class="panel-header" style="width: 100%;">
+                <div class="panel-title">表单绘制</div>
+            </div>
+            <script id="myFormDesign" type="text/plain"></script>
+        </div>
+    </div>
+
+
+</div>

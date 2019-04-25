@@ -1,0 +1,12 @@
+<div class="panel-body" style="min-height:160px;padding-bottom:0px;" ng-init="AXModalInfo.style={width:'400px',top:'20%'}">
+	<div style="height:20px;"></div>
+	<div align="center">
+		<p>
+			<img ng-show="AXModalInfo.locked" style="-webkit-user-select:none; display:block; margin:auto;" src="ax/css/icon_loading.gif">
+			<h5 ng-hide="AXModalInfo.locked">{{AXModalInfo.result}}<br><br></h5><br>
+			<h5 ng-show="AXModalInfo.locked">{{AXModalInfo.wait}}</h5>
+			<button ng-hide="AXModalInfo.locked" type="button" class="btn btn-info btn-outline btn-sm" data-dismiss="modal" 
+				style="padding:6px;align:center;width:150px;font-size:13px" align="center" ng-click="AXModalInfo.callback()">关闭</button>
+		</p>
+	</div>
+</div>

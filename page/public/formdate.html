@@ -1,0 +1,46 @@
+<div ng-controller="axpage" ax-class="formdate">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <div style="max-height:400px;overflow:auto">
+            <form style="padding:20px; font-size:15px;">
+                <table class="table table-bordered table-striped table-hover">
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">控件名称<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字段英文名<p style="color: red; display: inline"><b> *</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  ng-model="con.date_name" required="required"  placeholder="&ensp;必填项" ng-model="con.date_name" /></td>
+                        <td><input type="text"  ng-model="con.date_dbname" required="required" ng-blur="dbNameCheck();"  placeholder="&ensp;必填项"/></td>
+                    </tr>
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">宽度<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字段英文名<p style="color: red; display: inline"><b> *</b></p></td>
+                    </tr>
+                    <tr>
+                        <td ng-init="con.length = 150">
+                            宽 <input type="number"  ng-model="con.length" required="required"  placeholder="&ensp;必填项" ng-value="con.length" ng-blur="length(con)" />&nbsp px
+                        </td>
+                        <td ng-init="con.selected = 'sys_datetime'">
+                            <select  ng-model="con.selected" >
+                                <optgroup label="----常用日期宏控件----">
+                                    <option value="sys_datetime" selected>当前日期+时间 [ 1997-01-01 12:30 ]</option>
+                                    <option value="sys_date">当前日期[1997-01-01]</option>
+                                    <option value="sys_date_cn">当前日期 [ 1997年1月1日 ]</option>
+                                    <option value="sys_date_cn_short1">当前日期 [ 1997年1月 ]</option>
+                                    <option value="sys_date_cn_short4">当前年份 [ 1997 ]</option>
+                                    <option value="sys_date_cn_short3">当前年份 [ 1997年 ]</option>
+                                    <option value="sys_date_cn_short2">当前日期 [ 1月1日 ]</option>
+                                    <option value="sys_time">当前时间 [ 12:30 ]</option>
+                                    <option value="sys_week">当前星期 [ 星期一 ]</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div style="float:right; padding: 10px;">
+                    <a  class="btn btn-default btn-outline btn-sm" ng-click="selectsave();" >保存</a>
+                    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" >取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

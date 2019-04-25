@@ -1,0 +1,66 @@
+
+<div ng-controller="axpage" ax-class="formadd" ng-init="AXModalInfo.style={height:'1000px'}">
+    <div class="panel panel-default"  >
+        <div class="panel-heading"  style="height:53px">
+            <i class="fa fa-sitemap fa-fw"></i> 表单列表-新增：
+            <div style="width:auto;position: absolute;right: 0">
+                <div id="btns" style="margin-top: -25px">
+                    <a id="closeBtn" class="l-btn  l-btn-plain "  data-dismiss="modal" >
+                        <span class="l-btn-left l-btn-icon-top">
+                            <span class="l-btn-text">关闭</span>
+                            <i class="l-btn-icon icon-clear">&nbsp;</i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body" style="height:100px;max-height:400px;overflow:auto">
+            <div style="width:540px;">
+                <!--<input  type="text" ng-show = false ng-model="guid"/>-->
+                <table border="1" style="width:560px;">
+                    <tbody margin-top="10px" style="width:100%;">
+                    <tr>
+                        <th width="20%"><div align="right">表单名称</div></th>
+                        <th width="80%">
+                            <input type="text" style="width: 70%" name="fname" ng-model="name" required="required" placeholder="必填项" ng-blur="checkRepeat()"/>
+                            <span id="checkMsg" style="color:#F00"></span>
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <th width="20%"><div align="right">基于已有表单</div></th>
+                        <th width="80%">
+                              <input ng-model="radio_check"  type="radio" name="checked1"  ng-value= true /> 是
+                              <input ng-model="radio_check"  type="radio" name="checked1"  ng-value= false /> 否
+                        </th>
+                    </tr>
+                    <tr ng-show="radio_check">
+                        <th width="20%"><div align="right">选择已有表单</div></th>
+                        <th width="80%">
+                            <select  ng-model="selectedName" style="width:70%;">
+                                <option value="" selected>请选择</option>
+                                <option ng-repeat="x in formname" value = {{x.GUID}} >{{x.FORM_NAME}}</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+                </tbody>
+
+
+    </div>
+    <div id="btns1" style="margin-top: 0px">
+        <div style="margin-top: 0px; margin-left:40%">
+            <a id="saveBtn1" class="l-btn l-btn-plain" ng-click="sumbit();">
+                                    <span class="l-btn-left l-btn-icon-top"><span class="l-btn-text">保存</span>
+                                    </span>
+            </a>
+            <a id="closeBtn1" class="l-btn  l-btn-plain "  data-dismiss="modal" >
+                                    <span class="l-btn-left l-btn-icon-top">
+                                        <span class="l-btn-text">取消</span>
+                                    </span>
+            </a>
+        </div>
+    </div>
+</div>

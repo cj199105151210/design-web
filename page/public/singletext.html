@@ -1,0 +1,54 @@
+<div ng-controller="axpage" ax-class="singletext">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <div style="max-height:400px;overflow:auto">
+
+            <form style="padding:20px; font-size:15px;">
+                <table class="table table-bordered table-hover">
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">控件名称<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字段英文名<p style="color: red; display: inline"><b> *</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  ng-model="text_name" required="required" placeholder="&ensp;必填项"/></td>
+                        <td><input type="text"  ng-model="text_dbname" required="required" ng-blur="dbNameCheck();"  placeholder="&ensp;必填项"/></td>
+                    </tr>
+                    <tr style="cursor:default">
+                        <td  align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">数据类型<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td  align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;" ng-show="true"> 高✖宽</td>
+                    </tr>
+                    <tr>
+                        <td ng-init="text_type='varchar'">
+                            <select ng-model="text_type" style = "width:196px;" >
+                                <option value="varchar" ng-selected = "varchar == text_type">文本</option>
+                                <option value="int" >整数</option>
+                                <option value="float">浮点数</option>
+                            </select>
+                        </td>
+                        <td  ng-init="text_length1 = '150'">
+                            <input type="text" ng_model = "text_length1 " size="5" ng-value= "text_length1"/>✖
+                            <input type="text" ng_model = "text_length2" size="5" ng-value=""  placeholder="auto"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">对齐方式</td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">默认值</td>
+                    </tr>
+                    <tr>
+                        <td ng-init="text_align='left'">
+                            <select ng-model="text_align" style = "width:196px;">
+                                <option value="left" ng-selected = "left==text_align">左对齐</option>
+                                <option value="center">居中</option>
+                                <option value="right">右对齐</option>
+                            </select>
+                        </td>
+                        <td><input type="text" ng-model="text_value" placeholder="&ensp;无则不填"></td>
+                    </tr>
+                </table>
+                <div style="float:right; padding: 10px;">
+                    <a  class="btn btn-default btn-outline btn-sm" ng-click="textareasave();" >保存</a>
+                    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" >取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

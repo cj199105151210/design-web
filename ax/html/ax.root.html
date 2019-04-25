@@ -1,0 +1,11 @@
+<div ng-include="AXHomePage" ng-if="AXAppReady"></div>
+<div ng-repeat="AXModalInfo in AXModalInfoList">
+	<div id="{{AXModalInfo._id}}" ng-init="AXModalInfo._show()" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+	    <div class="modal-dialog" ng-style="AXModalInfo.style">
+	        <div class="modal-content">
+	            <div class="panel panel-info" style="margin-bottom:0px" ng-include="AXModalInfo.template + '?' + AXModalInfo._rand">
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>

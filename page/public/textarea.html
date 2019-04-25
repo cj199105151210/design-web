@@ -1,0 +1,45 @@
+<div ng-controller="axpage" ax-class="textarea">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <div style="max-height:400px;overflow:auto">
+
+            <form style="padding:20px; font-size:15px;">
+                <table class="table table-bordered table-hover">
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">控件名称<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字段英文名<p style="color: red; display: inline"><b> *</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  ng-model="text_name" required="required" placeholder="&ensp;必填项"/></td>
+                        <td><input type="text"  ng-model="text_dbname" required="required" ng-blur="dbNameCheck();"  placeholder="&ensp;必填项"/></td>
+                    </tr>
+                    <tr style="cursor:default">
+                        <td  align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;" ng-show="true"> 高✖宽</td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字体大小</td>
+                    </tr>
+                    <tr>
+                        <td  ng-init="text_length1 = '150';text_length2 = '30'">
+                            <input type="text" ng_model = "text_length2" size="5" ng-value="text_length2" /> ✖
+                            <input type="text" ng_model = "text_length1 " size="5" ng-value= "text_length1"/>
+
+                        </td>
+                        <td><input ng-model="orgfontsize" ng-blur="fontSizeCheck();" type="text"  ng-value="orgfontsize"  placeholder="auto"/> px</td>
+                    </tr>
+                    <tr >
+                        <td  colspan="3" align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">
+                           默认值
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <textarea class="input-block-level" rows="3"  cols="65" ng-model="orgvalue" placeholder="多行文本框默认值..."></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div style="float:right; padding: 10px;">
+                    <a  class="btn btn-default btn-outline btn-sm" ng-click="textareasave();" >保存</a>
+                    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" >取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

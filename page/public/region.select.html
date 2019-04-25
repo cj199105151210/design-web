@@ -1,0 +1,38 @@
+
+<div class="panel-heading">
+    选择区域<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+
+<div ng-controller="axnone" ng-init="ax().setScopeFromServer(this, 'list', ['ssqdmb/queryAll.do', {category:1}], {lowercase:true})">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <img ng-hide="list" align="center" style="-webkit-user-select:none;padding-top:120px;display:block; margin:auto;" src="ax/css/icon_loading.gif">
+        <div ng-show="list">
+            <p>
+                <i class="fa fa-search"></i> 区域名称: <input ng-model="filterValue" style="width:200px"></input>
+            </p>
+            <div style="max-height:400px;overflow:auto">
+                <table class="table table-bordered table-hover">
+                    <thead style="background: #f5f5f5;">
+                        <tr>
+                            <th>ID</th>
+                            <th>上级区域</th>
+                            <th>区域名称</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="row in list | filter:{region_name:filterValue}" data-dismiss="modal" ng-click="AXModalInfo.callback(row, AXModalInfo.callbackParam)" style="cursor:default">
+                            <td width="20%" style="display:table-cell;vertical-align:middle">{{row.region_id}}</td>
+                            <td width="30%" style="display:table-cell;vertical-align:middle">{{row.parent_name}}</td>
+                            <td width="50%" style="display:table-cell;vertical-align:middle;color:#66afe9">{{row.region_name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-footer" style="height:50px">
+        <text style="font-size:12px;color:#777777">Total Records: {{list.length}}</text>
+        <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" style="margin-bottom:40px;width:90px;float:right">Close</button>
+    </div>
+</div>

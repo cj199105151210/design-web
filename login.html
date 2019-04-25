@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>表单引擎</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" CONTENT="no-cache"> 
+    <meta http-equiv="Cache-Control" CONTENT="no-store, must-revalidate"> 
+    <meta http-equiv="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT"> 
+    <meta http-equiv="expires" CONTENT="0">
+
+    <!--引入login样式 start-->
+    <link rel="stylesheet"href="vendor/bosi/login/themes/default/login.css">
+    <link rel="stylesheet" href="/vendor/layui/css/layui.css" media="all">
+
+    <!--引入login样式 end-->
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="login-wrapper">
+    <div class="login-header">
+        <div class="login-header-body">
+            <div class="logo">
+                <img src="vendor/bosi/login/themes/nontax/custom/logo.png" width="605" height="76" />
+            </div>
+        </div>
+    </div>
+    <div class="login-body">
+
+        <div class="login-body-bg">
+
+            <div class="login-form">
+                <div class="login-form-left" id="login_form_left">
+                    <div class="login-form-left-body">
+                        <div class="login-from-tabs">
+                            <ul class="ui-nav" id="J-loginMethod-tabs">
+                                <li data-status="J-login" id="tab-userLogin" class="active">账密登录</li>
+                                <!-- <li data-status="ca-login" id="tab-caLogin">CA登录</li> -->
+                                <br class="clear-float">
+                            </ul>
+                            <div class="login login-modern" id="J-login">
+                                <div class="error-box"></div>
+                                <form name="loginForm" id="loginForm" action="" method="get">
+                                    <div class="fm-item">
+                                        <label id="J-label-user" class="ui-label"> <i
+                                                class="icon-user"></i>
+                                        </label> <input type="text" value="" placeholder="输入账号"
+                                                        maxlength="100" name="username"
+                                                        id="username" class="i-text" datatype="s3-32"
+                                                        nullmsg="请输入输入账号！" errormsg="用户名至少3个字符,最多18个字符！">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <div class="fm-item">
+                                        <label id="J-label-user" class="ui-label"> <span
+                                                class="ui-icon ui-icon-userDEF"><i class="icon-password"></i></span>
+                                        </label> <input type="password" placeholder="输入密码" value=""
+                                                        maxlength="100" id="password"
+                                                        name="password" class="i-text" nullmsg="请设置密码！" datatype="*"
+                                                        errormsg="密码范围在6~16位之间！">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+
+                                    <div class="fm-item">
+                                        <label for="logonId" class="form-label"></label> <input
+                                            type="button"  value="登  录" tabindex="4" id="send-btn"
+                                            class="btn-login">
+                                        <div class="ui-form-explain"></div>
+                                    </div>
+                                    <input
+                                            type="hidden" name="rememberMe" value="false" />
+                                    <input type="hidden" name="loginType" value='1' />
+                                </form>
+                            </div>
+
+                         
+                        </div>
+                    </div>
+                    <div class="login-form-right" id="login_form_right">
+                        <div class="login-form-right-body">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-footer">
+        <div class="login-footer-body">版本信息：<span id="version"></span></div>
+    </div>
+    <script>
+    </script>
+
+    <script src="vendor/jquery/jquery.min.js?20180400.00"></script>
+    <script src="vendor/jquery/jquery.serializejson.js?20180400.00"></script>
+    <script src="vendor/jquery/jquery.cookie.js"></script>
+    <script src="vendor/md5.js?20180400.00"></script>
+    <script src="vendor/layui/layui.all.js"></script>
+
+    <script>
+
+        $(function () {
+            $("#send-btn").on("click",function(){
+
+                loginUser();
+            });
+        })
+
+        //保存用户信息操作
+        function  loginUser() {
+
+            var data = $('#loginForm').serializeJSON();
+            data.password = hex_md5(data.password);
+            //开始登陆
+            var index = layer.load(1, {
+                              shade: [0.5,'#fff'] //0.1透明度的白色背景
+                            });
+
+
+            $.ajax({
+                type:"POST",
+                url:"form-design/userLogin",
+                data:data,
+                dataType:'json',
+                success:function (res) {
+
+                    if ( 1 == res.code){
+                        layer.closeAll('loading');
+                        var expiresDate = new Date();
+                        var dateTime =    expiresDate.setTime(expiresDate.getTime() + (2 * 60 * 1000));
+                        $.cookie('the_cookie',res.data.userCode,{expires : dateTime});
+                        $.cookie('userId',res.data.userId,{expires : dateTime});
+                        window.location.href='index.html';
+                    }else {
+                        layer.closeAll('loading');
+                        layer.msg(res.desc);
+                    }
+
+                },
+                error:function (res) {
+                    layer.msg('登录发生问题，请联系管理员');
+                    layer.closeAll('loading');
+                    console.log(res);
+                }
+            });
+        }
+
+    </script>
+
+
+</body>
+</html>

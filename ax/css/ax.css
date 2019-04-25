@@ -1,0 +1,128 @@
+.ax-input
+{
+	display:inline-block;
+	width: 220px;
+	height: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 3px;
+}
+
+.ax-input-select,
+.ax-input-select[readonly]
+{
+	display:inline-block;
+	width: 220px;
+	height: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.ax-area
+{
+	display:inline-block;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 3px;
+	resize:none;
+	margin-bottom: 0px;
+	line-height: 17px;
+	vertical-align: middle;
+}
+
+.axc-pre-edit 
+{
+	border-color: #66afe9;
+	white-space: pre-wrap; 
+	white-space: -moz-pre-wrap; 
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap; 
+	word-wrap: break-word;
+}
+
+.axc-pre-edit:focus 
+{
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.axc-div-hide
+{
+	visibility: hidden;
+	margin-top:-200px;
+	height:0px;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.axc-div-hide.show
+{
+	visibility: inherit;
+	margin-top:0px;
+	height: inherit;
+	opacity: 100;
+	overflow: visible;
+}
+
+.axc-div-move
+{
+	transition: all linear 0.2s;
+	margin-top:200px;
+	opacity: 0;
+}
+
+.axc-div-move.show
+{
+	margin-top:0px;
+	opacity: 100;
+}
+
+ .treeview .list-group-item
+ {
+ 	cursor:pointer
+ }
+ .treeview span.indent
+ {
+ 	margin-left:10px;
+ 	margin-right:10px
+ }
+ .treeview span.icon
+ {
+ 	width:12px;
+ 	margin-right:5px
+ }
+ .treeview .node-disabled
+ {
+ 	color:silver;
+ 	cursor:not-allowed
+ }
+ .node-treeview-checkable{}
+ .node-treeview-checkable:not(.node-disabled):hover
+ {
+ 	background-color:#F5F5F5;
+ } 
+ 
+.ax-badge 
+{
+  display: inline-block;
+  min-width: 10px;
+  padding: 2px 6px;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e65452;
+  border-radius: 10px;
+}

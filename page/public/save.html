@@ -1,0 +1,41 @@
+<div ng-controller="axpage" ax-class="checkboxs">
+    <div class="panel-body" style="min-height:300px;max-height:500px;padding-bottom:0px;">
+        <div style="max-height:400px;overflow:auto">
+
+            <form style="padding:20px; font-size:15px;">
+                <table class="table table-bordered table-striped table-hover">
+                    <tr  style="cursor:default">
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">控件名称<p style="color: red; display: inline"><b> *</b></p></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle;color:#5281b5;background-color: #f9f9f9;">字段英文名<p style="color: red; display: inline"><b> *</b></p></td>
+                        <th><span>排列方式</span></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  ng-model="con.text_name"    required="required" placeholder="&ensp;必填项"/></td>
+                        <td><input type="text"  ng-model="con.text_dbname"  required="required" ng-blur="dbNameCheck();"  placeholder="&ensp;必填项"/></td>
+                        <td >
+                            <input  ng-checked="1" required  name="checked" type="radio" ng-model="con.radiocheck" ng-value="1"/><span>横排</span><br>
+                            <input  name="checked" type="radio" ng-model="con.radiocheck" ng-value="0"/><span>竖排</span>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table table-hover table-condensed" id="options_table">
+                    <tr>
+                        <th align="center">选中</th>
+                        <th align="center">选项值</th>
+                        <th align="center">操作</th>
+                    </tr>
+                    <tr ng-repeat="row in  source">
+                        <td align="center" style="display:table-cell;vertical-align:middle"><input ng-model="row.radio_check"  type="checkbox" name="checked1"  ng-value=$index style="width:100%"/></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle"><input ng-model="row.radio_name" type="text"   style="width:50%" placeholder="选项值"/></td>
+                        <td align="center" style="display:table-cell;vertical-align:middle"> <button type="button" class="btn btn-warning btn-xs" ng-click="deleteAccount(row)" style="margin-left:5px">删除</button></td>
+                    </tr>
+                </table>
+                <a title="添加选项" class="btn btn-primary" ng-click="insertRadios();">添加选项</a>
+                <div style="float:right; padding: 10px;">
+                    <a  class="btn btn-default btn-outline btn-sm" ng-click="textareasave();" >保存</a>
+                    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" >取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

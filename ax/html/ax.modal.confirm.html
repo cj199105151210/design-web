@@ -1,0 +1,14 @@
+<div class="panel-heading">
+    信息确认<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+<div class="panel-body" style="min-height:140px;padding-bottom:0px;" ng-init="AXModalInfo.style={width:'400px',top:'20%'}">
+	<div align="center">
+		<h5 ng-bind-html="AXModalInfo.content">{{AXModalInfo.content}}</h5>
+		<div ng-show="AXModalInfo.detail" ng-bind-html="AXModalInfo.detail">{{AXModalInfo.detail}}</div>
+	</div>
+</div>
+<div class="panel-footer" style="height:50px" align="center">
+    <button type="button" class="btn btn-primary btn-outline btn-sm" data-dismiss="modal" style="padding:6px;font-size:13px;width:120px" ng-click="AXModalInfo.callback()"><b>确定</b></button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-default btn-outline btn-sm" data-dismiss="modal" style="padding:6px;font-size:13px;width:120px" ng-click="AXModalInfo.cancel()">取消</button>
+</div>

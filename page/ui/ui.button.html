@@ -1,0 +1,87 @@
+<div ng-controller="axpage" ax-class="ui.button">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">按钮</div>
+        <div class="panel-body">
+            <div class="row" style="height:50px"><button type="button" class="btn btn-primary">默认按钮</button></div>
+			<div class="row" style="height:50px"><button type="button" class="btn btn-info" ng-disabled="true">禁用按钮</button></div>
+			<div class="row" style="height:50px"><button type="button" class="btn btn-primary" style="width:120px"><i class="fa fa-search"></i> 查询</button></div>
+			<div class="row" style="height:50px"><button type="button" class="btn btn-primary btn-outline pull-left"><i class="fa fa-plus"></i> 新增</button></div>
+			<div class="row" style="height:50px"><button type="button" class="btn btn-success" style="width:120px">确定</button></div>
+			<div class="row" style="height:50px"><button type="button" class="btn btn-default" style="width:120px">取消</button></div>
+            <div class="row" style="height:50px"><button type="button" class="btn btn-primary btn-outline pull-left">编排通知书号</button></div>
+            <div class="row" style="height:50px"><button type="button" class="btn btn-primary btn-outline pull-left">导出Excel</button></div>
+            <div class="row" style="height:50px;width:50px">
+            <button type="button" class="btn btn-primary">查询</button></div>
+            <div class="row" style="height:50px">
+				<button type="button" class="btn btn-default btn-xs"><i class="fa fa-eraser"></i> 重置</button>
+			</div>
+			<pre readonly>{{code}}</pre>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">表格内按钮</div>
+        <div class="panel-body">
+    		<table class="table table-striped table-bordered table-hover">
+                <thead style="background: #FEF5EF;">
+                    <tr>
+                        <th width="100px" style="text-align:center;">操作</th>
+                        <th style="text-align:center;">操作</th>
+                        <th style="text-align:center;">编辑框加按钮</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td width="100px" align="center" style="display:table-cell;vertical-align:middle">
+                        <button type="button" class="btn btn-info btn-xs">编辑</button>
+                        <button type="button" class="btn btn-warning btn-xs">删除</button>
+                    </td>
+                    <td width="100px" align="center" style="display:table-cell;vertical-align:middle">
+                    	<button type="button" class="btn btn-outline btn-info btn-xs"><i class="fa fa-arrow-up"></i></button>
+                    </td>
+                    <td width="200px" style="display:table-cell;vertical-align:middle">
+                        <div class="row" style="width:200px;padding-left:15px">
+                            <input value="这是一个编辑框" style="width:150px;border:0px;background:none;padding:0px">
+                            <button type="button" class="btn btn-info btn-xs btn-outline pull-right"><b>...</b></button>
+                        </div>
+                    </td>
+                    <td></td>
+                </tbody>
+            </table>
+            <pre readonly>{{codeInTable}}</pre>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">按钮组</div>
+        <div class="panel-body">
+            <div class="btn-group" role="group" style="height:50px" ng-init="currPanel=1">
+            	<button type="button" class="btn btn-default" ng-click="currPanel=1">按钮1</button>
+            	<button type="button" class="btn btn-default" ng-click="currPanel=2">按钮2</button>
+            	<button type="button" class="btn btn-default" ng-click="currPanel=3">按钮3</button>
+            	<button type="button" class="btn btn-default" ng-click="currPanel=4">按钮4</button>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body" ng-show="currPanel==1">
+					当前显示的是：按钮1对应的panel<br>
+					按钮组用于两个方面：<br>
+					。替代tab导航，避免出现两层导航，影响美观<br>
+					。同一系列业务功能的按钮
+				</div>
+				<div class="panel-body" ng-show="currPanel==2">
+					当前显示的是：按钮2对应的panel
+				</div>
+				<div class="panel-body" ng-show="currPanel==3">
+					当前显示的是：按钮3对应的panel
+				</div>
+				<div class="panel-body" ng-show="currPanel==4">
+					当前显示的是：按钮4对应的panel
+				</div>
+			</div>
+			<pre readonly>{{codeGroup}}</pre>
+        </div>
+    </div>
+
+</div>
+
